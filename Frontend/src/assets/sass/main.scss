@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+
+@import "./branding.scss";
+
+// Update Bulma's global variables
+$family-sans-serif: "Roboto", sans-serif;
+
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+$primary: $bright-red;
+$info: $dark-cyan;
+$secondary: $bright-cyan;
+$text: $white;
+// $danger: #ff0000;
+
+$danger: $bright-cyan;
+$background: $navy-blue;
+$link: $primary;
+
+@import "../../../node_modules/bulma/sass/utilities/_all.sass";
+
+// Changes to component specifics
+@import "./bulmaComponents/_card.scss";
+@import "./bulmaComponents/_progress.scss";
+@import "./bulmaComponents/_box.scss";
+@import "./bulmaComponents/_panel.scss";
+@import "./bulmaComponents/_buttons.scss";
+@import "./bulmaComponents/_button.scss";
+
+// Bulma extensions
+@import "../../../node_modules/bulma-checkradio/src/sass/index.sass";
+
+// Import only what you need from Bulma
+@import "../../../node_modules/bulma/bulma.sass";
+@import "../../../node_modules/buefy/src/scss/utils/all.scss";
+@import "../../../node_modules/buefy/src/scss/components/_carousel.scss";
+@import "../../../node_modules/buefy/src/scss/components/_tooltip.scss";
+@import "../../../node_modules/buefy/src/scss/components/_image.scss";
+
+
+
+
+
+/* On Chrome */
+:root::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox and IE */
+:root {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: hidden;
+}
+

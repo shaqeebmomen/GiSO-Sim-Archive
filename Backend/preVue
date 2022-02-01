@@ -1,0 +1,8 @@
+add this to the hosting property in firebase.json once vue is implemented
+,
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]

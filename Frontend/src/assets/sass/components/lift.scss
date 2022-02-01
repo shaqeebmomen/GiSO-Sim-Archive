@@ -1,0 +1,124 @@
+@import "../branding.scss";
+@import "../main.scss";
+
+$side-width: 15%;
+$foot-height: 25%;
+$logo-height: 12%;
+$row-height: (100%-$logo-height)/5;
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-row: 1;
+    grid-column: 1;
+}
+#logo {
+    height: 100%;
+}
+.lift-container {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    // // background-image: url("../assets/images/grid.png");
+    background-image: url("../assets/images/starsandgrid.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: $side-width 100%-$side-width;
+    grid-template-rows: $logo-height 4 * $row-height $row-height;
+
+    * {
+        box-sizing: border-box;
+    }
+    // div,
+    // .params {
+    //     border: red 1px solid;
+    // }
+}
+.footer {
+    grid-column: 2;
+    grid-row: 3;
+    background: none;
+
+    // @extend .container;
+}
+.history {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: $card-radius;
+}
+.sidebar {
+    grid-column: 1;
+    grid-row: 2/4;
+    overflow: visible;
+}
+
+.params {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.leaderboard {
+    display: grid;
+    box-sizing: border-box;
+    place-items: center;
+    flex-grow: 1;
+}
+
+.displays {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+
+.animation-window {
+    grid-column: 1;
+    .card-content {
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+    }
+}
+
+.lift-box {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.kinematics-graph {
+    grid-column: 2;
+}
+.card {
+    position: relative;
+    height: auto;
+    background: rgba($background, 0.9);
+}
+.graph-switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.scale-switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info-tooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line-chart {
+    height: 100%;
+}
+
+.banner {
+    grid-column: 2;
+    grid-row: 1;
+}

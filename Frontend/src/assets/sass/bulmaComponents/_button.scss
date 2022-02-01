@@ -1,0 +1,12 @@
+.button {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+    &:active {
+        transform: scale(0.95);
+    }
+    &:hover {
+        // transform: scale(1.02);
+
+        box-shadow: 2px 2px 25px 1px rgba($color: #000000, $alpha: 0.3);
+    }
+}

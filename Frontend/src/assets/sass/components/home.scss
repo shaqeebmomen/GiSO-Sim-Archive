@@ -1,0 +1,68 @@
+@import "../main.scss";
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+}
+
+#kirby {
+    height: 12%;
+    bottom: -12%;
+    left: -12%;
+    position: absolute;
+    transform: scale(-1, 1);
+}
+#coin {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    height: 10%;
+}
+
+.home-container {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-image: url("../assets/images/grid.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.login-form {
+    width: 45%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.hint {
+    cursor: pointer;
+    animation: pulse 3s infinite alternate ease-in-out;
+}
+.no-hint {
+    cursor: auto;
+}
+
+.credits {
+    width: 20%;
+    position: absolute;
+    bottom: 3%;
+    left: 50%-10%;
+    display: grid;
+    place-items: center;
+}
