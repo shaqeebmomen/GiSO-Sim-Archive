@@ -1,6 +1,8 @@
 # GiSO-Sim-Archive
 Archived and currently hosted version of the GiSO-2020 Simulator
 
+[Demo (Click "Input Guest Login")](https://giso-sim-archive.web.app/)
+
 ## Logging In
 ![Login](https://user-images.githubusercontent.com/11233745/152038525-8b711ee2-360c-4081-a5cc-060f1d987549.gif)
 
